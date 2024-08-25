@@ -21,7 +21,3 @@ TEST(Statistics, AverageNaNForEmpty) {
     //Design the gtest EXPECT statement here.
     //Use http://www.cplusplus.com/reference/cmath/isnan/
 }
-int main(int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
