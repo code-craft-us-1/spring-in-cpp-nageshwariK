@@ -12,7 +12,7 @@ TEST(Statistics, ReportsAverageMinMax) {
 }
 
 TEST(Statistics, AverageNaNForEmpty) {
-    auto computedStats = Statistics::ComputeStatistics({});
+    auto computedStats = Statistics::ComputeStatistics({NAN,(INFINITY-INFINITY),HUGE_VAL*0.0F,NAN});
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
     EXPECT_TRUE(std::isnan(computedStats.average));
